@@ -1,0 +1,29 @@
+.pagination {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination li button {
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .pagination li button:focus {
+    outline: none;
+  }
+  
+  .pagination li.disabled button {
+    color: #6c757d;
+    cursor: default;
+  }
+  

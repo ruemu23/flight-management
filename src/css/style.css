@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.loginclass{
+
+ border: 0px solid red;
+ height: 100vh;
+ background-image: url('../images/flimage4.jpeg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+
+}
+
+.formline{
+    border: 0px solid blue;
+    
+    height: 60%;
+    width: 40%;
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(20, 20, 20, 0.845);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 60px;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url('../images/flimage4.jpeg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;  
+}
+
+
+.inputer{
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 2px;
+    outline: none;
+    
+}
+.mybutton{
+    background-color: rgb(18, 18, 26);
+    color: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.wrapper{
+    height: auto;
+    background-color: gray;
+}
+.header{
+    height: 60px;
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+}
+.header1 {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .header2 {
+    margin-left: 10px;
+  }
+.mybody{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: calc(100% - 60px); /* subtract the height of the header */
+}
+.sidemenu{
+    width: 15%;
+    
+    border: 0px solid blue;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+.sidemenu > .baller{
+    background-color: brown;
+    color: white;
+    font-weight: 500;
+    border: 0px solid blue;
+    text-align: center;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.mycontent{
+    width: 85%;
+    border: 0px solid green;  
+    height: 100%;
+}
+.myTable{
+    margin-left: -1px;
+}
+
+
+ /*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
+ @media screen and (min-width: 1024px){
+    .formline{
+        height: 40%;
+        width: 30%;
+       
+    }
+    .hiders{
+        display: none;
+    }
+    .isidemenu{
+        display: none;
+    }
+ }
+
+  /*###Tablet(medium)###*/
+  @media screen and (min-width : 768px) and (max-width : 1023px){
+    .formline{
+        height: 60%;
+        width: 60%;
+       
+    }
+    .sidemenu{
+        display: none;
+        width: 45%;
+        
+     
+    }
+    .sidemenu > .baller{
+        background-color: brown;
+        color: white;
+        font-weight: 500;
+        border: 0px solid blue;
+        text-align: center;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .isidemenu{
+        width: 55%;
+        background-color: rgb(6, 9, 10);
+        border: 0px solid green;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .isidemenu > .baller{
+        background-color: brown;
+        color: white;
+        font-weight: 500;
+        border: 0px solid blue;
+        text-align: center;
+        height: 55px;
+        display: flex;
+      
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .mycontent{
+        width: 100%;
+        border: 0px solid green;  
+        height: 100%;
+    }
+  }
+
+  @media screen and (min-width : 0px) and (max-width : 767px){
+    .formline{
+        height: 60%;
+        width: 70%;
+       
+    }
+    .sidemenu{
+        display: none;
+        width: 45%;
+        
+     
+    }
+    .sidemenu > .baller{
+        background-color: brown;
+        color: white;
+        font-weight: 500;
+        border: 0px solid blue;
+        text-align: center;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .isidemenu{
+        width: 55%;
+        background-color: rgb(6, 9, 10);
+        border: 0px solid green;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .isidemenu > .baller{
+        background-color: brown;
+        color: white;
+        font-weight: 500;
+        border: 0px solid blue;
+        text-align: center;
+        height: 55px;
+        display: flex;
+      
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .mycontent{
+        width: 100%;
+        border: 0px solid green;  
+        height: 100%;
+    }
+  }
+
+  /*### Wrist Watches*/
+    @media screen and (min-width : 0px) and (max-width : 162px){
+        .formline{
+            height: 60%;
+            width: 40%;
+           
+        }
+        .header1 {
+          font-size: 13px;
+          }
+          .isidemenu{
+            width: 55%;
+            background-color: rgb(6, 9, 10);
+            border: 0px solid green;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+        }
+        .isidemenu > .baller{
+            background-color: brown;
+            color: white;
+            font-weight: 500;
+            border: 0px solid blue;
+            text-align: center;
+            height: 25px;
+            font-size: 9px;
+            display: flex;
+          
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+          .mycontent{
+            width: 100%;
+            border: 0px solid green;  
+            height: 100%;
+        }
+    }
+
